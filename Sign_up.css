@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+body{
+    background-image: url(./assets/background.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+.contWith{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+   
+}
+.Allinput div label{
+    margin-left: 10px ;
+
+}
+.contWith h4{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.Allinput{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    
+    box-shadow: 10px 15px whitesmoke ;
+}
+.Allinput div{
+    margin: 10px auto;
+    width: 48%;
+    position: relative;
+
+}
+.Allinput div input{
+    margin-bottom: 5px ;
+    width:100%;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 5px;
+    transition: 0.5s;
+    background: transparent;
+}
+.Allinput div input:focus{
+ border-bottom: 2px solid #ec2875;
+}
+::placeholder{
+    
+    opacity: 0.3;
+}
+button{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top:20px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background:green ;
+    z-index: 1;
+}
+button:hover{
+    background-color: aquamarine;
+}
+@media (max-width:700px){
+    
+    .Allinput div{
+       width: 100%; 
+       
+    }
+    .contWith{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        position:absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+       
+    }
+}

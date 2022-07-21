@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sign_up.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contWith">
+    <h3>This is not a real online service! 
+        You know you need something like this in your life
+    to help your realize your deepest
+dreams.Sign up now to get started</h3>
+   <form action="/Akhand" method="post">
+    <div class="Allinput">
+        <div>
+            <label for="firstName">FirstName*</label>
+            <input type="text" placeholder="First name..."minlength="3"maxlength="15"required>
+        </div>
+        <div>
+            <label for="lastName">LastName*</label>
+            <input type="text" placeholder="Last  name..."minlength="3"maxlength="15"required>
+        </div><div>
+            <label for="email">Email*</label>
+            <input type="email" placeholder="Enter Email..."required>
+        </div><div>
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="mobile number" pattern="[0-9]{10}" required /> 
+
+        </div><div>
+            <label for="password">Password*</label>
+            <input type="password" name="password" id="password" placeholder="password..." minlength="4" minlength="20" required>
+        </div><div>
+            <label for="cpassword">Confirm Password*</label>
+            <input type="password"  name="cpassword" id="cpassword"placeholder="Confirm password..." required>
+        </div>
+        
+    </div>
+
+    <button type="submit" onclick="Validate()">Create Account</button>
+
+</form>
+<h4>Already have an account? <a href="Log-in">Log-in</a></h4>   
+
+</div>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("cpassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>
